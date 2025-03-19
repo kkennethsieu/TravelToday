@@ -1,0 +1,47 @@
+.blog {
+  /* max-width: fit-content; */
+  width: 100%;
+  transition: transform 0.4s ease-in-out;
+  cursor: pointer;
+  position: relative;
+}
+.blog:hover {
+  transform: scale(1.03);
+}
+
+.blog img {
+  width: 100%;
+  border-radius: 25px;
+  margin-bottom: 0.3rem;
+}
+
+.blog p {
+  color: white;
+  margin-left: 0.5rem;
+}
+
+.blog h3 {
+  color: white;
+  margin-left: 0.5rem;
+}
+
+.deleteBtn {
+  position: absolute;
+  left: 88%;
+  bottom: 88%;
+  border-radius: 10px;
+  border-width: 0px;
+  padding: 0.3rem 0.5rem;
+  background-color: #ff9800;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.deleteBtn:hover {
+  background-color: #ff9900c7;
+}
+
+.blogLink {
+  text-decoration: none;
+  color: inherit;
+}

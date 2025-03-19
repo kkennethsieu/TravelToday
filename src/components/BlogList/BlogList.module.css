@@ -1,0 +1,11 @@
+.blogListContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.blogList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+}

@@ -1,0 +1,106 @@
+.contactMainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem 2rem;
+}
+
+/* **** IMAGE **** */
+.imageContainer {
+  width: 35rem;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+.imageContainer:hover img {
+  transform: scale(1.03);
+  filter: brightness(75%);
+}
+
+.imageContainer h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+
+  text-align: center;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.imageContainer:hover h3 {
+  visibility: visible;
+  opacity: 1;
+}
+/* ******** CONTACT FORM */
+.contactContainer {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.contactContainer h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm label {
+  color: black;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.contactForm button {
+  padding: 12px;
+  background-color: #ff9800;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactForm button:hover {
+  background-color: #ff9900c7;
+}

@@ -1,0 +1,43 @@
+.pageNav {
+  margin-left: 0.7rem;
+}
+
+.pageNav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.pageNavBtn {
+  color: white;
+  background-color: #ff9800;
+  font-weight: 550;
+  padding: 0.8rem 0.7rem;
+  border-radius: 10px;
+  border-width: 0px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.pageNavBtn:hover {
+  background-color: #ff9900c7;
+}
+
+.pageNav a:link,
+.pageNav a:visited {
+  display: block;
+  color: white;
+  background-color: #ff9800;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 0.7rem;
+  border-radius: 10px;
+}
+
+.pageNav a:active {
+  border: 2px solid white;
+}
+
+.pageNav a:hover {
+  background-color: #ff9900c7;
+}

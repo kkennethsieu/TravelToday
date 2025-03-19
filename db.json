@@ -1,0 +1,164 @@
+{
+  "blogs": [
+    {
+      "id": "14",
+      "date": "2025-02-10",
+      "location": "Paris, France",
+      "title": "First Time Seeing the Eiffel Tower",
+      "description": "Seeing the Eiffel Tower in person was more magical than I imagined. I wandered Parisian streets, catching glimpses of it between buildings until I found a quiet spot by the Seine. As night fell, the tower lit up and sparkled, its reflection dancing on the water. I sat there with a Nutella-banana crepe, soaking in the moment. Later, I strolled through Champs de Mars as musicians played softly, ending the night in peaceful awe.",
+      "img": "http://localhost:9000/paris.jpg"
+    },
+    {
+      "id": "5",
+      "date": "2025-03-05",
+      "location": "Kyoto, Japan",
+      "title": "Cherry Blossoms and Tea Houses",
+      "description": "Walked along the Philosopher's Path this morning, surrounded by cherry blossoms in full bloom. It felt like time slowed down. Stopped at a small tea house where an elderly woman served the smoothest matcha I’ve ever tasted.",
+      "img": "http://localhost:9000/kyoto.jpg"
+    },
+    {
+      "id": "16",
+      "date": "2025-04-12",
+      "location": "Marrakech, Morocco",
+      "title": "Lost in the Souks",
+      "description": "Got completely lost in the maze of Marrakech’s souks—and it was the best thing ever! Every turn led to something new: colorful spices, handmade rugs, and the smell of fresh mint tea. The call to prayer echoing through the streets gave me goosebumps.",
+      "img": "http://localhost:9000/morocco.jpg"
+    },
+    {
+      "id": "12",
+      "date": "2025-05-20",
+      "location": "Santorini, Greece",
+      "title": "Sunset from Oia",
+      "description": "I found the perfect spot on a rooftop in Oia to watch the sunset. The sky turned shades of orange, pink, and purple while boats sailed lazily in the caldera. It’s one of those moments I wanted to pause forever.",
+      "img": "http://localhost:9000/greece.jpeg"
+    },
+    {
+      "id": "8",
+      "date": "2025-06-30",
+      "location": "Banff National Park, Canada",
+      "title": "Lake Louise Reflections",
+      "description": "Woke up early to catch the sunrise at Lake Louise. The mountains reflected perfectly on the water’s glassy surface. I kayaked out into the stillness—it was just me, the sound of water, and pure peace.",
+      "img": "http://localhost:9000/banff.jpg"
+    },
+    {
+      "id": "9",
+      "date": "2025-07-15",
+      "location": "Bali, Indonesia",
+      "title": "Morning Yoga in Ubud",
+      "description": "Started my day with sunrise yoga surrounded by rice terraces in Ubud. The air smelled of incense and frangipani flowers. After class, I sipped coconut water straight from the fruit while listening to birds and distant temple bells.",
+      "img": "http://localhost:9000/bali.png"
+    },
+    {
+      "id": "18",
+      "date": "2025-08-05",
+      "location": "Reykjavik, Iceland",
+      "title": "Chasing the Midnight Sun",
+      "description": "Stayed up until midnight and watched the sun barely dip below the horizon before rising again. The sky was painted in soft pastels, and I ended the night soaking in a natural hot spring surrounded by mountains.",
+      "img": "http://localhost:9000/iceland.jpeg"
+    },
+    {
+      "id": "13",
+      "date": "2025-09-12",
+      "location": "Petra, Jordan",
+      "title": "Wandering Through Ancient Stone",
+      "description": "Walked through the Siq at sunrise, and the sight of the Treasury bathed in golden light took my breath away. Later, I sipped mint tea on a cliff, overlooking the ancient city carved into rose-red rock.",
+      "img": "http://localhost:9000/petra.jpeg"
+    },
+    {
+      "id": "4",
+      "date": "2025-10-18",
+      "location": "Cappadocia, Turkey",
+      "title": "Floating Over Fairy Chimneys",
+      "description": "Took a hot air balloon ride at dawn. Watching dozens of colorful balloons rise over the surreal landscape of rock formations was pure magic. Landed to a breakfast of fresh bread, olives, and Turkish tea.",
+      "img": "http://localhost:9000/cappadocia.jpeg"
+    },
+    {
+      "id": "7",
+      "date": "2025-11-02",
+      "location": "Queenstown, New Zealand",
+      "title": "Adventure Capital of the World",
+      "description": "Went bungee jumping over the Kawarau Bridge! The adrenaline rush was insane. Afterward, I calmed my nerves with a lakeside walk, watching the sunset over snow-capped mountains reflected in the water.",
+      "img": "http://localhost:9000/queenstown.jpeg"
+    },
+    {
+      "id": "6",
+      "date": "2025-12-25",
+      "location": "Vienna, Austria",
+      "title": "Christmas Markets and Classical Music",
+      "description": "Spent Christmas Eve wandering Vienna’s markets, sipping hot mulled wine, and trying roasted chestnuts. Later, I attended a classical concert in a grand hall—Mozart and Strauss never sounded so magical!",
+      "img": "http://localhost:9000/vienna.jpeg"
+    },
+    {
+      "id": "17",
+      "date": "2026-01-14",
+      "location": "Cape Town, South Africa",
+      "title": "Hiking Table Mountain",
+      "description": "Climbed to the top of Table Mountain and was rewarded with sweeping views of the ocean and city below. On the way down, spotted a dassie sunning itself on a rock—nature at its finest!",
+      "img": "http://localhost:9000/capetown.jpeg"
+    },
+    {
+      "id": "2",
+      "date": "2026-02-22",
+      "location": "Cusco, Peru",
+      "title": "Gateway to the Andes",
+      "description": "Explored Cusco’s cobblestone streets and vibrant markets. Had the best ceviche in a tiny family-run restaurant. Getting ready to start the Inca Trail tomorrow—excited doesn’t even cover it!",
+      "img": "http://localhost:9000/cusco.jpeg"
+    },
+    {
+      "id": "3",
+      "date": "2026-03-10",
+      "location": "Siem Reap, Cambodia",
+      "title": "Sunrise at Angkor Wat",
+      "description": "Woke up at 4 AM to catch the sunrise at Angkor Wat. Watching the temple’s reflection appear on the still waters was surreal. Later, I biked through the ancient ruins, feeling like an explorer.",
+      "img": "http://localhost:9000/angkorwat.jpeg"
+    },
+    {
+      "id": "10",
+      "date": "2026-04-05",
+      "location": "Amalfi Coast, Italy",
+      "title": "Lemon Groves and Cliffside Views",
+      "description": "Rented a scooter and rode along the winding roads of the Amalfi Coast. Stopped for fresh lemon granita and wandered through Positano’s colorful streets. The turquoise waters below looked straight out of a painting.",
+      "img": "http://localhost:9000/amalfi.jpeg"
+    },
+    {
+      "id": "1",
+      "date": "2026-05-14",
+      "location": "Prague, Czech Republic",
+      "title": "Medieval Charm and River Walks",
+      "description": "Spent the afternoon crossing the Charles Bridge, listening to street musicians and watching the boats glide along the Vltava River. Ended the day with chimney cake and a view of Prague Castle lit up at night.",
+      "img": "http://localhost:9000/prague.jpeg"
+    },
+    {
+      "id": "11",
+      "date": "2026-06-09",
+      "location": "Zanzibar, Tanzania",
+      "title": "Spice Tours and Turquoise Waters",
+      "description": "Joined a spice tour in a lush plantation and tasted fresh cloves and vanilla right from the source. Later, relaxed on a white sand beach with the clearest water I’ve ever seen. Pure paradise.",
+      "img": "http://localhost:9000/zanzibar.jpeg"
+    },
+    {
+      "id": "20",
+      "date": "2026-07-21",
+      "location": "Edinburgh, Scotland",
+      "title": "Castles and Cobblestones",
+      "description": "Walked up the Royal Mile to Edinburgh Castle, soaking in the history and misty views. Caught a street performance at the Fringe Festival and warmed up with a hearty plate of haggis in a cozy pub.",
+      "img": "http://localhost:9000/edinburgh.jpeg"
+    },
+    {
+      "id": "15",
+      "date": "2026-08-30",
+      "location": "Phuket, Thailand",
+      "title": "Island Hopping Adventure",
+      "description": "Took a long-tail boat tour to Phi Phi Islands. Swam in emerald lagoons and snorkeled with colorful fish. Wrapped up the day with a beachside dinner watching the sunset melt into the horizon.",
+      "img": "http://localhost:9000/phuket.jpeg"
+    },
+    {
+      "id": "19",
+      "date": "2026-09-17",
+      "location": "Barcelona, Spain",
+      "title": "Gaudí’s Masterpieces and Tapas Nights",
+      "description": "Visited Sagrada Família and Park Güell—Gaudí’s architecture is even more incredible in person! Later, wandered the Gothic Quarter and shared tapas and sangria under the stars with new friends.",
+      "img": "http://localhost:9000/barcelona.jpeg"
+    }
+  ]
+}

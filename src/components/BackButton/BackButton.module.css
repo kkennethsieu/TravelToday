@@ -1,0 +1,16 @@
+.backBtn {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.backBtn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
