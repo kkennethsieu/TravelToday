@@ -9,29 +9,40 @@ import CreateBlog from "./pages/CreateBlog/CreateBlog";
 import BlogPost from "./pages/BlogPost/BlogPost";
 import { AuthProvider } from "./context/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 60 * 1,
+    },
+  },
+});
 function App() {
   return (
     <AuthProvider>
-      <BlogProvider>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="blogs" element={<Blogs />} />
-            <Route path="blogs/:id" element={<BlogPost />} />
-            <Route
-              path="create"
-              element={
-                <ProtectedRoute>
-                  <CreateBlog />
-                </ProtectedRoute>
-              }
-            />
-            <Route path="about" element={<About />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="login" element={<LoginPage />} />
-          </Routes>
-        </BrowserRouter>
-      </BlogProvider>
+      <QueryClientProvider client={queryClient}>
+        <BlogProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Homepage />} />
+              <Route path="blogs" element={<Blogs />} />
+              <Route path="blogs/:id" element={<BlogPost />} />
+              <Route
+                path="create"
+                element={
+                  <ProtectedRoute>
+                    <CreateBlog />
+                  </ProtectedRoute>
+                }
+              />
+              <Route path="about" element={<About />} />
+              <Route path="contact" element={<Contact />} />
+              <Route path="login" element={<LoginPage />} />
+            </Routes>
+          </BrowserRouter>
+        </BlogProvider>
+      </QueryClientProvider>
     </AuthProvider>
   );
 }

@@ -1,25 +1,29 @@
 .viewBlogContainer {
   width: 100%;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 2rem auto;
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #1f1f1f;
   color: white;
   padding: 2rem;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  position: relative;
+  border-radius: 12px;
+  border: 1px solid #333;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .viewBlogContainer img {
+  flex: 1 1 300px;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
-  border-radius: 8px;
-  width: 40%;
-  height: 300px;
-  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .viewBlogDetails {
+  flex: 1 1 400px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -27,35 +31,25 @@
 
 .viewBlogDetails h3 {
   font-size: 2rem;
-  color: white;
+  font-weight: 700;
   margin: 0;
 }
 
 .viewBlogDetails h4 {
-  font-size: 1.4rem;
-  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ff9800;
+  margin: 0;
 }
 
 .viewBlogDetails .date {
-  font-size: 1rem;
-  color: #aaa;
+  font-size: 0.95rem;
+  color: #bbb;
+  margin-bottom: 0.5rem;
 }
 
 .viewBlogDetails p {
-  font-size: 1rem;
-  color: white;
+  font-size: 1.05rem;
   line-height: 1.6;
-  max-width: 700px;
-}
-
-@media (max-width: 768px) {
-  .viewBlogContainer {
-    flex-direction: column;
-    padding: 1.5rem;
-  }
-
-  .viewBlogContainer img {
-    width: 100%;
-    height: auto;
-  }
+  color: #f1f1f1;
 }

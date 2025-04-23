@@ -1,26 +1,39 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useSearchParams } from "react-router-dom";
 import styles from "./PageNav.module.css";
 import { useAuth } from "../../context/AuthContext";
-import { useBlog } from "../../context/BlogContext";
 
 function PageNav() {
   const { isAuthenticated } = useAuth();
-  const { sortBlogsAsc, sortBlogsDesc, sortBlogsByIdAsc } = useBlog();
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  function handleSort(value) {
+    setSearchParams({ sort: value });
+  }
+
   return (
     <div className={styles.pageNav}>
       <ul>
         <li>
-          <button className={styles.pageNavBtn} onClick={sortBlogsByIdAsc}>
+          <button
+            className={styles.pageNavBtn}
+            onClick={() => handleSort("id_asc")}
+          >
             All
           </button>
         </li>
         <li>
-          <button className={styles.pageNavBtn} onClick={sortBlogsAsc}>
+          <button
+            className={styles.pageNavBtn}
+            onClick={() => handleSort("date_asc")}
+          >
             Ascending Date
           </button>
         </li>
         <li>
-          <button className={styles.pageNavBtn} onClick={sortBlogsDesc}>
+          <button
+            className={styles.pageNavBtn}
+            onClick={() => handleSort("date_desc")}
+          >
             Descending Date
           </button>
         </li>

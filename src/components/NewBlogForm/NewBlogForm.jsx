@@ -1,22 +1,18 @@
 import { useState } from "react";
-import styles from "./NewBlogForm.module.css";
-import { useBlog } from "../../context/BlogContext";
+import { useAddBlog } from "./useAddBlog";
 import { useNavigate } from "react-router-dom";
+import styles from "./NewBlogForm.module.css";
 
 function NewBlogForm() {
   const navigate = useNavigate();
-  const { addNewBlog } = useBlog();
+  const { mutate, isLoading, error } = useAddBlog();
 
   const [dateVisited, setDateVisited] = useState("");
   const [locationVisited, setLocationVisited] = useState("");
   const [titleVisited, setTitleVisited] = useState("");
   const [descriptionVisited, setDescriptionVisited] = useState("");
-  // const [ratingVisited, setRatingVisited] = useState("");
   const [imgFile, setImgFile] = useState(null);
-  // ^ This scan be saved into the backend to upload again//
-
   const [imgPreviewUrl, setImgPreviewUrl] = useState("");
-  console.log(imgPreviewUrl);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -25,19 +21,25 @@ function NewBlogForm() {
       !locationVisited ||
       !titleVisited ||
       !descriptionVisited ||
-      !imgPreviewUrl
+      !imgFile
     )
       return;
+
     const newBlog = {
-      id: crypto.randomUUID(),
       date: dateVisited,
       location: locationVisited,
       title: titleVisited,
       description: descriptionVisited,
-      img: imgPreviewUrl,
     };
-    addNewBlog(newBlog);
-    navigate("/blogs");
+
+    mutate(
+      { newBlog, imgFile },
+      {
+        onSuccess: () => {
+          navigate("/blogs");
+        },
+      }
+    );
   }
 
   function handleImageChange(e) {
@@ -64,9 +66,7 @@ function NewBlogForm() {
           type="date"
           name="dateVisited"
           value={dateVisited}
-          onChange={(e) => {
-            setDateVisited(e.target.value);
-          }}
+          onChange={(e) => setDateVisited(e.target.value)}
           className={styles.formInput}
         />
       </div>
@@ -80,9 +80,7 @@ function NewBlogForm() {
           name="location"
           value={locationVisited}
           placeholder="City, Country"
-          onChange={(e) => {
-            setLocationVisited(e.target.value);
-          }}
+          onChange={(e) => setLocationVisited(e.target.value)}
           className={styles.formInput}
         />
       </div>
@@ -96,9 +94,7 @@ function NewBlogForm() {
           name="title"
           value={titleVisited}
           placeholder="Title"
-          onChange={(e) => {
-            setTitleVisited(e.target.value);
-          }}
+          onChange={(e) => setTitleVisited(e.target.value)}
           className={styles.formInput}
         />
       </div>
@@ -111,29 +107,10 @@ function NewBlogForm() {
           name="description"
           value={descriptionVisited}
           placeholder="Description"
-          onChange={(e) => {
-            setDescriptionVisited(e.target.value);
-          }}
+          onChange={(e) => setDescriptionVisited(e.target.value)}
           className={styles.formTextArea}
         />
       </div>
-
-      {/* <div className={styles.formGroup}>
-        <label htmlFor="rating" className={styles.formLabel}>
-          Rating:
-        </label>
-        <input
-          type="number"
-          name="rating"
-          value={ratingVisited}
-          onChange={(e) => {
-            setRatingVisited(e.target.value);
-          }}
-          min="1"
-          max="5"
-          className={styles.formInput}
-        />
-      </div> */}
 
       <div className={styles.formGroup}>
         <label htmlFor="image" className={styles.formLabel}>
@@ -148,9 +125,15 @@ function NewBlogForm() {
         />
       </div>
 
-      <button type="submit" className={styles.submitButton}>
-        Submit
+      <button
+        type="submit"
+        className={styles.submitButton}
+        disabled={isLoading}
+      >
+        {isLoading ? "Submitting..." : "Submit"}
       </button>
+
+      {error && <p className="error-message">{error.message}</p>}
     </form>
   );
 }

@@ -9,7 +9,7 @@ function Homepage() {
         <NavBar />
         <main className={styles.main}>
           <h1>You travel the world</h1>
-          <h2>TravelWise helps you travel wise</h2>
+          <h2>TravelToday helps you travel wise</h2>
           <p>
             A world map that tracks your footsteps into every city you can think
             of. Never forget your wonderful <br /> experiences, and show your

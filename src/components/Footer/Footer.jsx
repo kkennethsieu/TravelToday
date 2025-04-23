@@ -58,7 +58,7 @@ function Footer() {
         </ul>
 
         <p className={styles.copy}>
-          &copy; {new Date().getFullYear()} TravelWise. All Rights Reserved.
+          &copy; {new Date().getFullYear()} TravelToday. All Rights Reserved.
         </p>
       </div>
     </footer>
