@@ -41,4 +41,4 @@ coverage/
 
 # Yarn / Pnpm lock files if not using
 # yarn.lock
-# pnpm-lock.yaml
+# pnpm-lock.yaml.env
